@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishanth Ganji | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="container nav-inner">
+                <a class="logo" href="index.html" aria-label="Home"><span class="sr-only">Home</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <!-- theme selector removed -->
+                <button class="burger" aria-label="Open navigation"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero animate-on-scroll">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>I'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-content container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:nisganji@iu.edu">nisganji@iu.edu</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>930-333-7231</p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="http://www.linkedin.com/in/nishanth-ganji" target="_blank">linkedin.com/in/nishanth-ganji</a></p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send Me a Message</h2>
+                <form id="contact-form" action="thankyou.html" method="GET">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <span class="error-message" id="first-name-error">Please enter your first name</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <span class="error-message" id="last-name-error">Please enter your last name</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <span class="error-message" id="email-error">Please enter a valid email address</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                        <span class="error-message" id="password-error">Password must be at least 8 characters</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <span class="error-message" id="confirm-password-error">Passwords do not match</span>
+                    </div>
+                    
+                    <button type="submit" class="btn primary">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nishanth Ganji. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
